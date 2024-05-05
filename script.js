@@ -45,7 +45,7 @@ function inputOfFilter( punct ){//ritorna la selezione da ricercare
 document.addEventListener("DOMContentLoaded", function(){
     const select = document.getElementById("filtro");//punct SELECT - OPTIONS
     const barSearch = document.getElementById("research");// punct INPUT
-    let keyCurrent = select.value;
+    let keyCurrent = inputOfFilter(select);
     select.addEventListener("change", function(){  //EVENTO SULLA CHIAVE  
        keyCurrent = inputOfFilter(select);
        barSearch.value = "";//quando utente cambia chiave pulisco la barra di ricerca
